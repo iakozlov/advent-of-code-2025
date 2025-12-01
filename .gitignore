@@ -1,0 +1,5 @@
+# Ignore input folders containing puzzle inputs
+**/input/
+
+# JetBrains IDE
+.idea/
