@@ -1,31 +1,31 @@
 package main
 
 import (
-	"advent-of-code-2025/day5"
+	"advent-of-code-2025/day6"
 	"fmt"
 	"os"
 )
 
 func main() {
 	if len(os.Args) < 2 {
-		fmt.Println("Usage: day5 <part>")
+		fmt.Println("Usage: day6 <part>")
 		fmt.Println("  part: 1 or 2")
 		os.Exit(1)
 	}
 
 	part := os.Args[1]
-	inputFile := "day5/input/input.txt"
+	inputFile := "day6/input/input.txt"
 
 	switch part {
 	case "1":
-		result, err := day5.Part1(inputFile)
+		result, err := day6.Part1(inputFile)
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "Error: %v\n", err)
 			os.Exit(1)
 		}
 		fmt.Printf("Part 1 Result: %d\n", result)
 	case "2":
-		result, err := day5.Part2(inputFile)
+		result, err := day6.Part2(inputFile)
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "Error: %v\n", err)
 			os.Exit(1)
