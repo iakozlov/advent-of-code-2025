@@ -82,8 +82,8 @@ func checkRectangle(a, b Point, segments []Segment) bool {
 		if from.x == to.x {
 			x := from.x
 			withinX := x > minX && x < maxX
-			crossTopEdge := minY >= from.y && minY < to.y
-			crossBottomEdge := maxY > from.y && maxY <= to.y
+			crossBottomEdge := minY >= from.y && minY < to.y
+			crossTopEdge := maxY > from.y && maxY <= to.y
 
 			if withinX && (crossTopEdge || crossBottomEdge) {
 				return false
